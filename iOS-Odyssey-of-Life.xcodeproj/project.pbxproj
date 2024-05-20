@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A73D0842BFB41930043E9E1 /* bottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A73D0832BFB41930043E9E1 /* bottomTabView.swift */; };
+		5A73D0862BFB422B0043E9E1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A73D0852BFB422B0043E9E1 /* HomeView.swift */; };
+		5A73D0882BFB44040043E9E1 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A73D0872BFB44040043E9E1 /* JournalView.swift */; };
+		5A73D08D2BFB5C880043E9E1 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A73D08C2BFB5C880043E9E1 /* MoreView.swift */; };
 		5A93FABC2BFA12A400D5EB01 /* iOS_Odyssey_of_LifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93FABB2BFA12A400D5EB01 /* iOS_Odyssey_of_LifeApp.swift */; };
 		5A93FABE2BFA12A400D5EB01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93FABD2BFA12A400D5EB01 /* ContentView.swift */; };
 		5A93FAC02BFA12A400D5EB01 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93FABF2BFA12A400D5EB01 /* Item.swift */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A73D0832BFB41930043E9E1 /* bottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomTabView.swift; sourceTree = "<group>"; };
+		5A73D0852BFB422B0043E9E1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5A73D0872BFB44040043E9E1 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		5A73D08C2BFB5C880043E9E1 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
 		5A93FAB82BFA12A400D5EB01 /* iOS-Odyssey-of-Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Odyssey-of-Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A93FABB2BFA12A400D5EB01 /* iOS_Odyssey_of_LifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Odyssey_of_LifeApp.swift; sourceTree = "<group>"; };
 		5A93FABD2BFA12A400D5EB01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +42,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A73D08B2BFB57320043E9E1 /* Level 1 */ = {
+			isa = PBXGroup;
+			children = (
+				5A73D0872BFB44040043E9E1 /* JournalView.swift */,
+				5A73D0852BFB422B0043E9E1 /* HomeView.swift */,
+				5A73D08C2BFB5C880043E9E1 /* MoreView.swift */,
+			);
+			path = "Level 1";
+			sourceTree = "<group>";
+		};
 		5A93FAAF2BFA12A400D5EB01 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +73,8 @@
 			children = (
 				5A93FABB2BFA12A400D5EB01 /* iOS_Odyssey_of_LifeApp.swift */,
 				5A93FABD2BFA12A400D5EB01 /* ContentView.swift */,
+				5A73D0832BFB41930043E9E1 /* bottomTabView.swift */,
+				5A73D08B2BFB57320043E9E1 /* Level 1 */,
 				5A93FABF2BFA12A400D5EB01 /* Item.swift */,
 				5A93FAC12BFA12A600D5EB01 /* Assets.xcassets */,
 				5A93FAC32BFA12A600D5EB01 /* Preview Content */,
@@ -140,9 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A73D08D2BFB5C880043E9E1 /* MoreView.swift in Sources */,
+				5A73D0882BFB44040043E9E1 /* JournalView.swift in Sources */,
 				5A93FABE2BFA12A400D5EB01 /* ContentView.swift in Sources */,
 				5A93FAC02BFA12A400D5EB01 /* Item.swift in Sources */,
 				5A93FABC2BFA12A400D5EB01 /* iOS_Odyssey_of_LifeApp.swift in Sources */,
+				5A73D0862BFB422B0043E9E1 /* HomeView.swift in Sources */,
+				5A73D0842BFB41930043E9E1 /* bottomTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
