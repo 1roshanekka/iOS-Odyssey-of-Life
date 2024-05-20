@@ -20,7 +20,7 @@ struct JournalView: View {
                 .datePickerStyle(.graphical)
                 Button(action: {
                     print("pressed today")
-                    selectedDate = Date.now
+                    selectedDate =n Date.now
                 }, label: {
                     Text("Today")
                 })
