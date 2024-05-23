@@ -8,16 +8,14 @@
 import SwiftUI
 
 struct JournalView: View {
-    @EnvironmentObject var dataBase: db
-    
-    @State private var dateSelected: DateComponents?
-    @State private var displayEvents = false 
-    @State private var navigateToEditNoteView = false
-    
     @Binding public var selectedDate: Date
     @State private var journalPath = NavigationPath()
     
+    @EnvironmentObject var db: dataBase
+    
     var body: some View {
+        
+        
         NavigationStack(path: $journalPath) {
 //            VStack{
 //                DatePicker(selection: $selectedDate, displayedComponents: .date) {
@@ -36,18 +34,12 @@ struct JournalView: View {
 //                Text("Selected date: \(selectedDate.formatted(date: .abbreviated, time: .omitted))")
 //            }
             ScrollView{
-                CalendarView(interval: DateInterval(start: .distantPast, end: .distantFuture), dataBase: dataBase, dateSelected: $dateSelected, displayEvents: $displayEvents)
+                CalendarView(interval: DateInterval(start: .distantPast, end: .distantFuture), db: dataBase)
+                    .padding(20)
+                    .navigationTitle("Odyssey")
             }
-            .onChange(of: dateSelected) { newValue in
-                if newValue != nil {
-                    navigateToEditNoteView = true
-                }
-            }
-            NavigationLink(destination: EditNoteView(dateSelected: $dateSelected), isActive: $navigateToEditNoteView) {
-                EmptyView()
-            }
-            .navigationTitle("Odyssey")
         }
+        
     }
 }
 

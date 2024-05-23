@@ -10,6 +10,9 @@ import SwiftData
 
 @main
 struct iOS_Odyssey_of_LifeApp: App {
+    @AppStorage("isDark") private var isDark = true
+    
+    @StateObject var memories = db(preview: true)
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -26,6 +29,9 @@ struct iOS_Odyssey_of_LifeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(memories)
+//                .environment(\.isDarkMode, isDark)
+                .preferredColorScheme( isDark ? .dark : .light) // or `.light or` `nil` to use the current scheme
         }
         .modelContainer(sharedModelContainer)
     }
